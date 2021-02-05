@@ -9,20 +9,22 @@
       href="https://fonts.googleapis.com/css2?family=Alegreya&family=Questrial&display=swap"
       rel="stylesheet"
     />
-    <script src="js/script.js"></script>
   </head>
   <body>
     <nav>
       <h2 class="logo"><a href="index.html">Oleksandr Vorobiov</a></h2>
       <ul class="nav-items">
         <li class="navigation">
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </li>
         <li class="navigation">
-          <a href="#">Projects</a>
+          <a href="#skills">Skills</a>
         </li>
         <li class="navigation">
-          <a href="#">Contact</a>
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="navigation">
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
@@ -36,7 +38,7 @@
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container" id="about">
         <h2>About</h2>
         <div class="container-flex">
           <div class="container quote">
@@ -48,22 +50,23 @@
             <p>Originally came from Ukraine, but now located at Canada.</p>
             <p>
               In Ukraine, I graduated from the
-              <a>National Aviation University</a>. While I was in the 6th
-              semester, I realized that have no interest at all in what am I
-              studying. I started to look for something new in my life and after
-              graduating as "Aviation Engineer"(Lol) and moved to Canada.
+              <a href="https://nau.edu.ua/en/">National Aviation University</a>.
+              While I was in the 6th semester, I realized that have no interest
+              at all in what am I studying. I started to look for something new
+              in my life and after graduating as "Aviation Engineer"(Lol) and
+              moved to Canada.
             </p>
             <p>
-              In January 2021, I graduated from <a>Mohawk College</a>(Hamilton,
-              ON) as a "Software Support Engineer" and my choice fell on
-              "Front-End Web Development".
+              In January 2021, I graduated from
+              <a href="https://mymohawk.mohawkcollege.ca/">Mohawk College</a
+              >(Hamilton, ON) as a "Software Support Engineer" and my choice
+              fell on "Front-End Web Development".
             </p>
             <p>I will add my new interesting projects here soon...</p>
           </div>
         </div>
       </div>
-
-      <div class="container">
+      <div class="container" id="skills">
         <h2>Skills</h2>
         <div class="skills-flex">
           <div class="skill">
@@ -118,13 +121,115 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="container" id="projects">
         <h2>Projects</h2>
+        <div class="project-flex">
+          <img
+            src="/media/nejc-soklic-2jTu7H9l6JA-unsplash.jpg"
+            alt="project 1"
+          />
+          <div class="project-description">
+            <h3>Cool Project Name</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </p>
+
+            <a>Learn More ></a>
+          </div>
+        </div>
+        <div class="project-flex">
+          <img
+            src="/media/nejc-soklic-2jTu7H9l6JA-unsplash.jpg"
+            alt="project 1"
+          />
+          <div class="project-description">
+            <h3>Cool Project Name</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </p>
+
+            <a>Learn More ></a>
+          </div>
+        </div>
+        <div class="project-flex">
+          <img
+            src="/media/nejc-soklic-2jTu7H9l6JA-unsplash.jpg"
+            alt="project 1"
+          />
+          <div class="project-description">
+            <h3>Cool Project Name</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </p>
+
+            <a>Learn More ></a>
+          </div>
+        </div>
       </div>
-      <div>
+      <div class="container contact-me" id="contact">
         <h2>Contact</h2>
+
+        <p class="contact">
+          Get in touch via the form below, or by emailing
+          <a href="mailto:vorobjev111@gmail.com?subject=Hello!"
+            >vorobjev111@gmail.com</a
+          >.
+        </p>
+        <form action="http://formspree.io/vorobjev111@gmail.com" method="POST">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email adresss"
+            required
+          />
+
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" rows="6" required> </textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
       </div>
-      <footer></footer>
+
+      <footer>
+        <a href="https://www.linkedin.com/in/oleksandr-vorobiov-1a2420180/"
+          ><img src="media/001-linkedin.png" alt="LinkedIn profile"
+        /></a>
+        <a href="https://www.instagram.com/just.vorobiov/"
+          ><img src="media/002-instagram.png" alt="Instagram profile"
+        /></a>
+        <a href="https://github.com/JustVorobiov"
+          ><img src="media/003-github.png" alt="GitHub profile"
+        /></a>
+        <p>Created by Oleksandr Vorobiov, &#169;2021</p>
+        <p id="time"></p>
+      </footer>
     </main>
+    <script src="js/script.js"></script>
   </body>
 </html>

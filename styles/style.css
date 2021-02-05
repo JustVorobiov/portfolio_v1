@@ -64,6 +64,7 @@ header {
 header span {
   color: #f0860c;
 }
+/* links styles */
 a {
   color: white;
   text-decoration: none;
@@ -75,7 +76,6 @@ a:hover {
 }
 
 main a {
-  text-decoration: underline;
   color: #f0860c;
 }
 /* About section styles*/
@@ -101,7 +101,8 @@ main a {
   font-family: "Alegreya", serif;
   letter-spacing: 1.5px;
 }
-.about {
+.about,
+.project-description {
   font-family: "Alegreya", serif;
   line-height: 1.25em;
 }
@@ -109,7 +110,7 @@ main a {
   font-size: 18px;
 }
 .about p + p {
-  padding-top: 15px;
+  padding-top: 12px;
 }
 
 /* Skills section */
@@ -155,4 +156,111 @@ main a {
 }
 .completedPHP {
   width: 40%;
+}
+
+/* Projects styles */
+
+.project-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px 20px 20px 0;
+  margin-left: 20px;
+}
+
+.project-flex img {
+  max-width: 40%;
+  border-radius: 15px;
+}
+
+.project-description {
+  margin-left: 40px;
+  height: auto;
+  flex: 1;
+}
+
+.project-description h3,
+.project-description p {
+  padding-top: 20px;
+}
+.project-description p {
+  padding-bottom: 20px;
+}
+
+.project-description a {
+  padding-left: 25px;
+  font-weight: bold;
+}
+
+/* Contact styles */
+form {
+  padding: 20px 20px 20px 0;
+}
+label {
+  display: inline-block;
+
+  font-size: 1.5em;
+}
+
+input,
+textarea {
+  display: block;
+  width: 95%;
+  margin: 10px auto;
+  padding: 12px 8px;
+  color: white;
+  background-color: #191919;
+  line-height: 1.7em;
+  border: 0px;
+  border-radius: 10px;
+}
+
+input[type="submit"] {
+  font-size: 20px;
+  font-weight: 500;
+  width: 12%;
+  height: 55px;
+  color: #f0860c;
+  margin: auto 15px;
+}
+
+.contact {
+  padding-top: 10px;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+.contact-me {
+  margin-bottom: 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid white;
+  color: white;
+}
+
+footer img {
+  margin-top: 7px;
+  margin-right: 20px;
+}
+footer p {
+  margin-left: auto;
+}
+
+#time {
+  text-align: center;
+  font-size: 2em;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    text-align: center;
+  }
+  .quote {
+    display: none;
+  }
+  input[type="submit"] {
+    min-width: 100px;
+  }
 }
