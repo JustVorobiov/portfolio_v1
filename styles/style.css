@@ -39,7 +39,7 @@ main h2 {
 /* header styles */
 header {
   min-height: 630px;
-  background-image: url("/media/akshar-dave-Gvm7qlEae_M-unsplash.jpg");
+  background-image: url("/./media/akshar-dave-Gvm7qlEae_M-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -194,7 +194,7 @@ main a {
 
 /* Contact styles */
 form {
-  padding: 20px 20px 20px 0;
+  padding: 10px 20px 20px 0;
 }
 label {
   display: inline-block;
